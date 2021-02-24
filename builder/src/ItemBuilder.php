@@ -30,7 +30,7 @@ class ItemBuilder implements ItemBuilderInterface
             case 'book' :
                 $this->item = '3';
                 break;
-            default : 
+            default :
                 $this->item = '';
         }
         return $this;
