@@ -18,10 +18,11 @@ class ItemBuilder implements ItemBuilderInterface
         // TODO: Implement getItem() method.
     }
 
-    public function setItem($item)
+    public function setItem($item, $data)
     {
         switch($item) {
             case 'video':
+                $videoItem = new VideoItem();
                 $this->item = (new ItemDirector())->setData()->build();
                 break;
             case 'audio' :
