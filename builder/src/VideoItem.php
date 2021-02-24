@@ -4,7 +4,7 @@
 namespace ItemBuilder;
 
 
-class VideoItem
+class VideoItem extends Item
 {
 
 }

@@ -23,7 +23,7 @@ class ItemBuilder implements ItemBuilderInterface
         switch($item) {
             case 'video':
                 $videoItem = new VideoItem();
-                $this->item = (new ItemDirector())->setData()->build();
+                $this->item = (new ItemDirector())->setData($data)->build($videoItem);
                 break;
             case 'audio' :
                 $this->item = '2';
