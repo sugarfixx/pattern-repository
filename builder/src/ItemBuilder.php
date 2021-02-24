@@ -6,6 +6,8 @@ namespace ItemBuilder;
 
 class ItemBuilder implements ItemBuilderInterface
 {
+    private $item;
+
     public function setTitle($title)
     {
         // TODO: Implement setTitle() method.
@@ -18,7 +20,20 @@ class ItemBuilder implements ItemBuilderInterface
 
     public function setItem($item)
     {
-        // TODO: Implement setItem() method.
+        switch($item) {
+            case 'video':
+                $this->item = '1';
+                break;
+            case 'audio' :
+                $this->item = '2';
+                break;
+            case 'book' :
+                $this->item = '3';
+                break;
+            default : 
+                $this->item = '';
+        }
+        return $this;
     }
 
 
