@@ -8,6 +8,8 @@ class JSONFormatter implements Formatter
 {
     public function render($data)
     {
-        // TODO: Implement render() method.
+        $rd = ['products' => $data];
+        header("Content-type: application/json");
+        echo json_encode($rd, JSON_PRETTY_PRINT);
     }
 }
