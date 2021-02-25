@@ -14,10 +14,10 @@ $products = [
 ];
 
 
-function runRender(Render $render, $products) {
-    echo $render->render($products);
+function runRender(Formatter $formatter, $products) {
+    echo $formatter->render($products);
 }
 
-//$render = new RenderXML();
-$render = new RenderJSON();
+// $formatter = new XMLFormatter();
+$formatter = new JSONFormatter();
 runRender($render,$products);```
