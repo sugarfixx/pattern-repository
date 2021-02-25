@@ -1,5 +1,7 @@
 # Adapter pattern
 
+## Usage example:
+
 
 ```
 $products = [
